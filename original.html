@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+  <div id="container" class="container">
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo.svg">
+      </div>
+      <div class="score">
+        <h2>SCORE</h2>
+        <div class="scoreInfo">
+          <div class="score-container">
+            <h2>YOU</h2>
+            <p id="score">0</p>
+          </div>
+          <div class="score-container">
+            <h2>MACHINE</h2>
+            <p id="scoreMachine">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="game-container" class="game-container">
+      <img class="triangule" src="images/bg-triangle.svg">
+      <div id="paper" class="symbol1 paper">
+        <div class="symbol2">
+          <img class="symbol" src="images/icon-paper.svg">
+        </div>
+      </div>
+      <div id="rock" class="symbol1 rock">
+        <div class="symbol2">
+            <img class="symbol" src="images/icon-rock.svg">
+        </div>
+      </div>
+      <div id="scissor" class="symbol1 scissor">
+        <div class="symbol2">
+            <img class="symbol" src="images/icon-scissor.svg">
+        </div>
+      </div>
+    </div>
+
+    <div id="vs" class="vs-container">
+      <div id="person-container" class="election-container">
+        <p>YOU PICKED</p>
+        <div class="election">
+        </div>
+      </div>
+      <div class="result">
+        <p id="resultMsg"></p>
+        <p id="resultBtn" class="resultBtn">PLAY AGAIN</p>
+      </div>
+      <div id="computer-container" class="election-container">
+        <p>THE HOUSE PICKED</p>
+        <div class="election computerElection">
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-container">
+      <p id="rulesBtn" class="rulesBtn">RULES</p>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-rules">
+      <div class="header-rules">
+        <p>RULES</p>
+        <img id="closeRules" src="images/icon-close.svg">
+      </div>
+      <img class="rules-img" src="images/image-rules.svg">
+    </div>
+  </div>
+
+  <div id="modalPoints" class="modal">
+    <div class="modalPoints">
+      <p class="points-description">The winning player is the first to reach <input id="quantityPoints" type="number" value="5"> points</p>
+      <p id="pointsBtn">LETS GO!</p>
+    </div>
+  </div>
+
+  <div id="modalEndGame" class="modal">
+    <div class="modal-endGame">
+      <div class="header-rules">
+        <img id="closeRules" src="images/icon-close.svg">
+      </div>
+      <p></p>
+    </div>
+  </div>
+  
+</body>
+<script src="js.js"></script>
+
+</html>

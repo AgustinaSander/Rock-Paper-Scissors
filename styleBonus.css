@@ -1,0 +1,83 @@
+
+.pentagon{
+    position: absolute;
+    margin-top: 70px;
+    z-index: -500;
+}
+
+.scissor{
+    margin-top: 0;
+    margin-left: 250px;
+}
+
+.paper{
+    margin-top: 120px;
+    margin-right: -50px;
+}
+
+.rock{
+    margin-top: 300px;
+    margin-left: 200px;
+}
+
+.spock{
+    position: absolute;
+    box-shadow: 0px 7px 0px hsl(189, 62%, 51%);
+    background-color: hsl(189, 58%, 57%);
+    transition: 0.5s all;
+    margin-top: 120px;
+    margin-left: -300px;
+}
+
+.spock:hover{
+    box-shadow: 0px 7px 0px hsl(189, 66%, 44%);
+    background-color: hsl(189, 59%, 53%);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.lizard{
+    position: absolute;
+    box-shadow: 0px 7px 0px hsl(261, 73%, 60%);
+    background-color: hsl(261, 72%, 63%);
+    transition: 0.5s all;
+    margin-top: 300px;
+    margin-left: -200px;
+}
+
+.lizard:hover{
+    box-shadow: 0px 7px 0px hsl(261, 63%, 52%);
+    background-color: hsl(261, 73%, 60%);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.spock:hover .symbol2,.lizard:hover .symbol2{
+    background-color: rgb(233, 233, 233);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.lizard2{
+    box-shadow: 0px 7px 0px hsl(261, 73%, 60%);
+    background-color: hsl(261, 72%, 63%);
+}
+
+.spock2{
+    box-shadow: 0px 7px 0px hsl(189, 62%, 51%);
+    background-color: hsl(189, 58%, 57%);
+}
+
+.btn-container{
+    margin-top: 400px;
+}
+
+@media only screen and (max-width: 500px){
+    .btn-container{
+        margin-top: 0px;
+        margin-bottom: 50px;
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
